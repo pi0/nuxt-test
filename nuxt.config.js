@@ -1,5 +1,15 @@
 module.exports = {
   /*
+  ** Modules
+  */
+  modules: [
+    '~modules/test'
+  ],
+  plugins: [
+    '~plugins/test.js',
+    {src: '~plugins/test.js', ssr: false}
+  ],
+  /*
    ** Headers of the page
    */
   head: {

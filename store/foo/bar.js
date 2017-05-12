@@ -1,6 +1,6 @@
 export const state = () => {
   return {
-    baz: 'Vuex Nested Modules'
+    baz: 'Universal Vue.js Application'
   }
 }
 

@@ -5,8 +5,8 @@
       <h1 class="title">
         NUXTJS
       </h1>
-      <h2 class="subtitle" :id="_uid">
-        Universal Vue.js Application {{counter}}
+      <h2 class="subtitle">
+        {{ $store.state.foo.bar.baz}}
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
@@ -19,13 +19,10 @@
 <script>
 import Logo from '~components/Logo.vue'
 
-let counter = 0
-
 export default {
   data () {
-    counter++
     return {
-      counter
+
     }
   },
   components: {
